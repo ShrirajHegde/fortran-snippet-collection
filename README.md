@@ -1,4 +1,4 @@
-# fortran-90-modules-collection
+# Fortran90 modules and snippets collection
 Collection of modules with subroutines and functions for fortan 90 from various places
 
 
