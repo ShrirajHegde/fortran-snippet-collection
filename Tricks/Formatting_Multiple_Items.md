@@ -1,5 +1,5 @@
 ### Contributed by **Muhseen Mustafa**
-<br/>
+---
 If you want to write a format statement but you have use a variable (so you can't put it inside the format string) use write to make a character for example,
 
 #### say you want following format for:
