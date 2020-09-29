@@ -1,5 +1,5 @@
 # Fortran90 modules and snippets collection
-Collection of modules with subroutines and functions for fortan 90 from various places
+Collection of modules with subroutines and functions for fortan 90 from various places,aim is to make subroutines way simpler than ones in LAPACK.
 
 
 **Feel free to use,contribute,create issues and pull requests.**
