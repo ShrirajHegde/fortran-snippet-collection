@@ -1,4 +1,3 @@
-!Testing
 subroutine printMatrix(array_2d)
         implicit none
         integer::i,j,n,m,t(2)
