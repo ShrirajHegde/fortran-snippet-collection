@@ -73,13 +73,13 @@ module linearAlgebra  !!add "use linearAlgebra" in the program,(add the module o
     dimension=t(1)
 
 
-ALLOCATE(a(dimension,dimension))
-ALLOCATE(inverse(dimension,dimension))
-ALLOCATE(L(dimension,dimension))
-ALLOCATE(U(dimension,dimension))
-ALLOCATE(b(dimension))
-ALLOCATE(d(dimension))
-ALLOCATE(x(dimension))
+    ALLOCATE(a(dimension,dimension))
+    ALLOCATE(inverse(dimension,dimension))
+    ALLOCATE(L(dimension,dimension))
+    ALLOCATE(U(dimension,dimension))
+    ALLOCATE(b(dimension))
+    ALLOCATE(d(dimension))
+    ALLOCATE(x(dimension))
 
     
     
@@ -143,7 +143,7 @@ ALLOCATE(x(dimension))
     end do
 
     inverse=inverse;
-end function inverse
+    end function inverse
 
 
 
@@ -204,12 +204,3 @@ end function inverse
 end module
 
 
-! program test
-!     use linearAlgebra
-!     implicit none
-!     real*8::matrix(3,3),inverse_matrix(3,3)
-!     matrix = transpose(reshape((/ 1, -8, 3, 2, 1, 9, 8, 2, -2 /), shape(matrix)))
-!     inverse_matrix=inverse(matrix)
-!     print*,determinant(matrix)
-!     call printMatrix(matrix)
-! end program test
