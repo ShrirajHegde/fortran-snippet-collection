@@ -41,6 +41,15 @@ module linearAlgebra  !!add "use linearAlgebra" in the program,(add the module o
         print*,''
     end subroutine printVector
 
+    function readMatrix(number_of_rows,number_of_columns)
+    INTEGER,INTENT(IN)::number_of_rows,number_of_columns
+    integer::i
+    REAL*8::readMatrix(number_of_rows,number_of_columns)
+    do i=1,number_of_rows
+        READ*,readMatrix(i,:)
+    enddo
+    end function readMatrix
+
     function inverse(square_matrix)
     !============================================================
     ! Inverse matrix
