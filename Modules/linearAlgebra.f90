@@ -210,6 +210,20 @@ module linearAlgebra  !!add "use linearAlgebra" in the program,(add the module o
    
     END FUNCTION determinant
 
+    subroutine swapVector(vector1,vector2)
+    real*8,INTENT(INOUT)::vector1(:),vector2(:)
+    real*8,ALLOCATABLE::temp_vec(:)
+    INTEGER::dim
+    if(size(vector1) .ne. size(vector2))then
+        print*,"Error,vectors/slices are of different dimension (swapVector subroutine)"
+        CALL exit
+    endif
+    dim = size (vector1)
+    ALLOCATE(temp_vec(dim))
+    temp_vec = vector2
+    vector2 = vector1
+    vector1 = temp_vec
+    end subroutine swapVector
 end module
 
 
