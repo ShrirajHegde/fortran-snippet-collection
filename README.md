@@ -4,7 +4,7 @@ Collection of modules with subroutines and functions for fortan from various pla
 
 **Feel free to use,contribute,create issues and pull requests.**
 
-#### Using the following line in fortran 90 to use the module from another file or directly copy paste the whole module before the main program
+#### Using the following line in fortran to use the module from another file or directly copy paste the whole module before the main program
 ```f90
 INCLUDE 'file.ext'
 ```
