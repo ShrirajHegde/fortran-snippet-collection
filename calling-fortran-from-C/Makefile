@@ -16,4 +16,4 @@ run:all
 	@./executable.out
 
 clean:
-	@-rm *.o *.out tmp/* >/dev/null 2>&1 || true
+	@-rm *.o *.out tmp/*.o* >/dev/null 2>&1 || true
