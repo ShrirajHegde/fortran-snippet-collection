@@ -1,3 +1,7 @@
+!===========================================================
+! Counts and returns number of lines in a text file
+!===========================================================
+
 INTEGER function lineCount(filename1_of_50_char_len)
     CHARACTER(len = 50)::filename1_of_50_char_len
     lineCount = 0 

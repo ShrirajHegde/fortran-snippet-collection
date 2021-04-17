@@ -1,3 +1,10 @@
+!============================================================================
+! Prints 2D array as a matrix without requiring any other parameter than array to be printed
+! Edit to get required formatting
+! Shriraj Hegde - 2020
+!============================================================================
+
+
 subroutine printMatrix(array_2d)
         implicit none
         integer::i,j,n,m,t(2)
