@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include <stdbool.h> //for usint boolean true
+#include <stdbool.h> //for using boolean true
 
 extern int intSwap_(int* a, int* b); //declare external function (warning if not defined)
 
