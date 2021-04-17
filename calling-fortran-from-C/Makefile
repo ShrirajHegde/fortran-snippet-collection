@@ -1,7 +1,8 @@
 CC=gcc
 FC=gfortran
 
-all:assemble
+all:run
+	
 
 main.o:main.c
 	@$(CC) -c main.c -o tmp/main.o
@@ -12,7 +13,7 @@ intSwap.o:intSwap.f90
 assemble:intSwap.o main.o
 	@$(CC) tmp/intSwap.o tmp/main.o -o executable.out -lgfortran -g #here both fortran/c compilers work
 
-run:all
+run:assemble
 	@./executable.out
 
 clean:
