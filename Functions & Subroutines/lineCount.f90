@@ -4,6 +4,7 @@
 
 INTEGER function lineCount(filename1_of_50_char_len)
     CHARACTER(len = 50)::filename1_of_50_char_len
+    INTEGER::io
     lineCount = 0 
     OPEN (1536, file = filename1_of_50_char_len,status='old')
     DO
